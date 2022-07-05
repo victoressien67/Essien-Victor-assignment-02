@@ -21,6 +21,7 @@ function sumOfNumbers(arrayOfNumbers) {
       i+=1){total += arrayOfNumbers[i];}
     return total
 }
+console.log(sumOfNumbers(numbers))
     
 
 
