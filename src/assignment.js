@@ -15,12 +15,12 @@ const assignment = {};
  */
 const numbers = [3, 4, 5, 6, 7,]
 function sumOfNumbers(arrayOfNumbers) {
-     let total = 0
-  for (let i = 0; 
-    i>arrayOfNumbers.length;
-      i+=1){total += arrayOfNumbers[i];}
-    return total
+return arrayOfNumbers.reduce (
+  (accumulator, number) => {return number + accumulator},
+  0
+)
 }
+
 console.log(sumOfNumbers(numbers))
     
 assignment.sumOfNumbers = sumOfNumbers;
